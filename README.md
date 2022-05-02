@@ -8,15 +8,19 @@ At this time, the app support only colissimo track but soon others.
 
 ## Run Project
 To run this project you just need to clone the repo: 
+
 `git clone https://github.com/bastien-aumeunier/package-mobil-app.git`
 
 Go on `/utils/Constante.js` and Fill in the Backend IP like in the examples:
+
 `export const API_IP = 'http://127.0.0.1:8080'`
 
 You need install all node modules with:
+
 `npm install`
 
-Finally, you can run the app with: 
+Finally, you can run the app with:
+ 
 `npm start`
 
 ## Modules Use:
