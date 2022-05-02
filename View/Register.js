@@ -104,11 +104,13 @@ const Register = () => {
                     onChangeText={newMail => setMail(newMail)}
                 />
                 <TextInput placeholder='   Password'
+                    secureTextEntry={true}
                     placeholderTextColor={'black'}
                     style={styles.input}
                     onChangeText={newPassword => setPassword(newPassword)}
                 />
                 <TextInput placeholder='   Confirm Password'
+                    secureTextEntry={true}
                     placeholderTextColor={'black'}
                     style={styles.input}
                     onChangeText={newPasswordConfirm => setPasswordConfirm(newPasswordConfirm)}

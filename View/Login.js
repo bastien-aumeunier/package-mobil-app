@@ -99,6 +99,7 @@ const Login = () => {
                         onChangeText={newMail => setMail(newMail)}
                     />
                     <TextInput placeholder='   Password'
+                        secureTextEntry={true}
                         placeholderTextColor={'black'}
                         style={styles.input}
                         onChangeText={newPassword => setPassword(newPassword)}
