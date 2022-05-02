@@ -20,7 +20,7 @@ You need install all node modules with:
 `npm install`
 
 Finally, you can run the app with:
- 
+
 `npm start`
 
 ## Modules Use:
@@ -42,5 +42,10 @@ react-native-screens
 react-native-swipe-list-view
 ```
 ## Docs
-Very fast model https://www.figma.com/file/miT0wcqgxR68UJqfgOMVF5/Untitled?node-id=0%3A1 
-Expo Publish APP: https://expo.dev/@blaser_b/Package-Mobil-App
+Very fast model :
+
+https://www.figma.com/file/miT0wcqgxR68UJqfgOMVF5/Untitled?node-id=0%3A1
+
+Expo Publish APP: 
+
+https://expo.dev/@blaser_b/Package-Mobil-App
