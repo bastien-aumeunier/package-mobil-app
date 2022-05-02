@@ -12,7 +12,7 @@ const AskLogout = (props) => {
                     <Text style={styles().buttonText}>Annuler</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles('#8BC34A').modalButton} onPress={() => props.logoutAccount(true)}>
-                    <Text style={styles().buttonText}>Deconnection</Text>
+                    <Text style={styles().buttonText}>Logout</Text>
                 </TouchableOpacity>
             </View>
         </View>
