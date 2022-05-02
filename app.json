@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "front",
-    "slug": "front",
-    "version": "1.0.0",
+    "name": "package-app",
+    "slug": "Package-Mobil-App",
+    "version": "1.5.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,6 +20,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.blaser.packageapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
