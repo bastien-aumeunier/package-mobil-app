@@ -14,6 +14,7 @@ const Login = () => {
     const [password, setPassword] = useState("")
     const [erreur, setErreur] = useState("")
     const [loading, setLoading] = useState(false)
+    const [user, setUser] = useState()
 
 
     const setData = async (value) => {
@@ -29,9 +30,10 @@ const Login = () => {
         try {
             const req = await AsyncStorage.getItem('InfoLogin')
             if (req !== null) {
-                return JSON.parse(req)
+                setUser(JSON.parse(req))
+                return true
             } else {
-                return null
+                return false
             }
         } catch(e) {
             console.log(e)
@@ -69,6 +71,8 @@ const Login = () => {
             } else {
                 setErreur("Une erreur est survenue")
             }
+            setLoading(false)
+
         }
     }
 
