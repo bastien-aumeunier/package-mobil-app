@@ -86,7 +86,7 @@ const List = () => {
 
     const getUserData = async () => {
         try {
-            const jsonValue = await AsyncStorage.getItem('InfoLogin')
+            const jsonValue = await AsyncStorage.getItem('UserInfo')
             if (jsonValue !== null) {
                 return JSON.parse(jsonValue)
             } else {

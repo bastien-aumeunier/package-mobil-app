@@ -26,7 +26,7 @@ const Body = () => {
 
     const getUserInfo = async () => {
         try {
-            const jsonValue = await AsyncStorage.getItem('InfoLogin')
+            const jsonValue = await AsyncStorage.getItem('UserInfo')
             if (jsonValue !== null) {
                 return JSON.parse(jsonValue)
             } else {
@@ -39,7 +39,7 @@ const Body = () => {
 
     const logout = async () => {
         try {
-            await AsyncStorage.removeItem('InfoLogin')
+            await AsyncStorage.removeItem('UserInfo')
             navigation.navigate('Login')
         } catch(e) {
             console.log(e)

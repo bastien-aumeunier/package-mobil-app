@@ -19,7 +19,7 @@ const Login = () => {
 
     const setData = async (value) => {
         try {
-          await AsyncStorage.setItem('InfoLogin', JSON.stringify(value))
+          await AsyncStorage.setItem('UserInfo', JSON.stringify(value))
         } catch (e) {
           console.log(e)
         }
@@ -28,7 +28,7 @@ const Login = () => {
     
     const getData = async () => {
         try {
-            const req = await AsyncStorage.getItem('InfoLogin')
+            const req = await AsyncStorage.getItem('UserInfo')
             if (req !== null) {
                 setUser(JSON.parse(req))
                 return true
@@ -79,7 +79,7 @@ const Login = () => {
 
     useEffect(async() => {
         setLoading(true)
-        if(await getData() !== null) {
+        if(await getData() !== false) {
             navigation.navigate('Nav')
         }
         setLoading(false)
